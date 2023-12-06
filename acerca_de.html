@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>DiproDymas</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- Bootstrap core CSS-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles -->
+    <style>
+        body {
+            position: relative;
+        }
+
+        #sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 250px;
+            padding-top: 70px;
+            background-color: #343a40;
+            border-right: 1px solid #dee2e6;
+            color: #fff;
+            overflow-y: auto;
+            z-index: 1;
+            padding-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #sidebar a {
+            color: #fff;
+            margin-top: 10px;
+        }
+
+        #content {
+            padding: 25px;
+            transition: margin 0.3s ease;
+            margin-left: 250px; /* Ajuste para centrar el contenido */
+        }
+
+        @media (max-width: 767px) {
+            #sidebar {
+                position: fixed;
+                top: 0;
+                left: -250px;
+                height: 100%;
+                width: 120px;
+                padding-top: 250px;
+                background-color: #343a40;
+                border-right: 1px solid #dee2e6;
+                color: #fff;
+                overflow-y: auto;
+                z-index: 1;
+                padding-bottom: 20px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: left 0.3s ease;
+            }
+
+            #sidebar.open {
+                left: 0;
+            }
+
+            #content {
+                margin-left: 0;
+                padding-top: 170px;
+            }
+
+            #content.open {
+                margin-left: 150px;
+            }
+
+            /* Reducción del tamaño del texto en pantallas pequeñas */
+            #content h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top py-3">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top">DiproDymas</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina_principal.html">Pagina Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="empleo.html">Empleos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#acerca_de">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#perfil">Perfil</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="#acerca_de">Acerca de Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#servicios">Nuestros Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contacto">Información de Contacto</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <div id="content">
+        <!-- Acerca de -->
+        <section id="acerca_de" style="margin-top: 80px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-center mt-0">Acerca de DiproDymas</h2>
+                        <hr class="divider my-4" />
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <p class="text-muted">Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios -->
+        <section id="servicios" style="margin-top: 80px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-center mt-0">Nuestros Servicios</h2>
+                        <hr class="divider my-4" />
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <p class="text-muted">Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" style="margin-top: 80px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-center mt-0">Información de Contacto</h2>
+                        <hr class="divider my-4" />
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <p class="text-muted">Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5">
+                <div class="small text-center text-muted">
+                    <a class="social-icon text-dark mx-2" href="https://www.instagram.com/diprodymas/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="social-icon text-dark mx-2" href="https://www.facebook.com/people/Diprodymas/100078989924209/?ref=embed_page" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a class="social-icon text-dark mx-2" href="https://wa.me/+50558327533" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <br>
+                    Copyright &copy; 2023 - DiproDymas
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- Navigation Script -->
+    <script>
+        // Smooth scrolling using jQuery easing
+        $('a.js-scroll-trigger[href*="#"]:not([href="#"])').on('click', function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: (target.offset().top - 56)
+                    }, 1000, "easeInOutExpo");
+                    return false;
+                }
+            }
+        });
+
+        // Sidebar Toggle Script
+        document.addEventListener('DOMContentLoaded', function () {
+            const sidebar = document.getElementById('sidebar');
+            const content = document.getElementById('content');
+
+            document.querySelector('.navbar-toggler').addEventListener('click', function () {
+                sidebar.classList.toggle('open');
+                content.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+
+</html>
